@@ -5,15 +5,34 @@
 }
 body{
     font-family: sans-serif;
+    background-color: rgba(231, 228, 228, 0.529);
 }
-#container ul {
+#container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding-top: 20px ;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 0px 7px rgba(25, 0, 0, 0.488);
+}
+
+/*#container{
     display: flex;
     width: 90%;
-    
-}
+    margin: auto;
+        
+}*/
 ul{
     list-style: none;
+}
+li{
+    display: flex;
     align-items: center;
+    gap: 30px;
+    padding-bottom: 20px;
 }
 img{
     border-radius: 50%;
@@ -21,6 +40,7 @@ img{
 }
 h3{
     color: rgb(85, 85, 85); 
+    font-size: 16pt;
 }
 p{
     color: rgb(188, 188, 188);
