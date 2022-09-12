@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+}
+
+li > a{
+    list-style: none;
+    color: rgba(60, 57, 57, 0.831);
+    text-decoration: none;
+    display: flex;
+    padding-right: 20px;
+    
+        
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+a:hover{
+    color:rgba(235, 4, 4, 0.831);
+    
+}
+
+a::after{
+    content:"|";
+    padding-left: 20px;
+    
+}
+
