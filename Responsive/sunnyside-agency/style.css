@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: fit-content;
+
+}
+nav{
+    background-color: rgb(71, 192, 253);
+}
+#container{
+    background-color: #fff;
+    
+}
+#naranja{
+    display: flex;
+    width: 100%;
+}
+#blanquillo{
+    display: flex;
+    width: 100%;
+}
+#copa{
+    display: flex;
+    width: 100%;
+}
+#cerezas{
+    display: flex;
+    width: 100%;
+}
+#mandarina{
+    display: flex;
+    width: 100%;
+}
+#img_x4 .img_cuadros{
+    display: flex;
+    flex-flow: wrap column;
+    
+}
+
+#footer{
+    background-color: rgb(144, 212, 197);
+    
+}
