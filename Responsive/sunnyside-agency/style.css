@@ -5,27 +5,35 @@
 }
 body{
     height: fit-content;
-
-}
-nav{
-    background-color: rgb(71, 192, 253);
-    display: flex;
-    padding-top: 15px;
+    margin: auto;
 }
 #navmenu{
-   justify-content: space-around;
+   display: flex;
+   align-items: center;
+   position: relative;
+
 }
-#logosunny{
+#menu_long{
+    display: none;
+}
+#logo_sunny{
     display: flex;
-    width: 50%;
+    position: absolute;
+   left: 20px;
+   top: 30px;
+   z-index: 1;
     
 }
 #menu3{
-    align-self: flex-start;
-
+    display: flex;
+    position: absolute;
+   right: 20px;
+   top: 30px;
+   z-index: 1;
 }
 #container{
     background-color: #fff;
+    margin: auto;
     
 }
 #uno_box{
@@ -34,11 +42,14 @@ nav{
 #uno_box h1{
     position: absolute;
     top: 30%;
+    z-index: 1;
 }
 #uno_box .arrow{
     position: absolute;
     top: 55%;
-    left:45%;
+    left:50%;
+    z-index: 1;
+    text-align: center;
 }
 h1{
     font-family: 'Fraunces', serif;
@@ -46,9 +57,8 @@ h1{
     color: #fff;
     text-align: center;
     width: 100%;
-    padding: 0 50px;
     font-size: 2.5em ;
-
+    letter-spacing: .2em;
 }
 h2{
     font-family: 'Fraunces', serif;
@@ -73,9 +83,64 @@ p{
     display: flex;
     width: 100%;
 }
+#trans{
+    position: relative;
+}
+#transform{
+    padding: 60px 20px 40px 20px;
+    font-size: 2rem;
+}
+#transform_p{
+    padding: 0px 20px 50px 20px;
+    letter-spacing: .1rem;
+    font-size: 13pt;
+}
+#transform_link{
+    display: flex;
+    justify-content: center;
+    padding: 0 0 50px 0;
+    text-decoration: none;
+    font-family: 'Fraunces', serif;
+    color:rgb(0, 0, 0)
+}
+#efecto1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+}
+efecto1::before{
+    content: "";
+    height: 10px;
+    width: 110%;
+    background-color: rgba(255, 125, 109, .4);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
 #copa{
     display: flex;
     width: 100%;
+}
+#audience{
+    padding: 60px 30px 40px 30px;
+    font-size: 2rem;
+}
+#audience_p{
+    padding: 0px 20px 50px 20px;
+    letter-spacing: .1rem;
+    font-size: 13pt;
+}
+#audience_link{
+    display: flex;
+    justify-content: center;
+    padding: 0 0 50px 0;
+    text-decoration: none;
+    font-family: 'Fraunces', serif;
+    color:rgb(0, 0, 0)
+
 }
 #cerezas{
     display: flex;
@@ -149,34 +214,332 @@ ul{
     padding-bottom: 60px;
 }
 #img_x4{
-    width: 375px;
-    height:375px;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    grid-template-columns:1fr 1fr;
+    width: 100%;
+    margin: 0 auto;
+    object-fit: contain;
+
+}
+.imgx4 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
 }
 .img_c1{
     display: flex;
+   
     width: 100%;
-    height: 100%;   
+     
+       
 }
 .img_c2{
     display: flex;
+    
     width: 100%;
-    height: 100%;   
+    
+     
 }
 .img_c3{
     display: flex;
     width: 100%;
-    height: 100%;   
+    
 }
 .img_c4{
     display: flex;
     width: 100%;
-    height: 100%;   
+    
 }
 
 #footer{
     background-color: rgb(144, 212, 197);
+    height: fit-content;
+
+}
+#img_logo_foot img{
+    margin: auto;
+    display: flex;
+    width: 50%;
+    padding:60px 0 40px 0 ;
+    fill: hsl(167, 40%, 24%);
+}
+#menu_foot{
+    padding: 0 30px 60px;
+    text-align: center;
+    width: 100%;
+}
+.menu_a{
+    color: hsla(167, 40%, 24%, 0.657);
+    text-decoration: none;
+    font-family:'Barlow', sans-serif;
+    margin: auto;
+    padding: 0 20px;    
+}
+#social{
+    display: flex;
+    width: 80%;
+    align-content: center;
+    justify-content: space-around;
+    gap: 20px;
+    margin: auto;
+    padding-bottom: 80px;
+}
+.redes{
+    display: flex;   
+}
+
+@media screen and (min-width:800px) {
+    body{
+        height: fit-content;
+        position: relative;
+        max-width: 1440px;
+        margin: auto;
+    }
+    #container{
+        background-color: #fff;
+        margin: auto;
+        position: relative;
+        text-align: center;
+    }
+    #menu3{
+        display: none;
+    }
+    #menu_long{
+        display: flex;
+        align-items: center;
+        z-index: 1;
+        list-style: none;
+        position: absolute;
+        top: 30px;
+        left: 60%;
+    }
+    #menu_long_ul_li{
+        text-decoration: none;
+        list-style: none;
+    }
+    .menu_long_a{
+        text-decoration: none;
+        color: #fff;
+        font-family:'Barlow', sans-serif;
+        font-size: 10pt;
+        padding: 0 30px 0 0 ;
+    }
+    #naranja{
+        content:url(./images/desktop/image-header.jpg);
+        max-width: 1440px;
+    }
+    #uno_box h1{
+        position: absolute;
+        top: 20%;
+        z-index: 1;
+        left: 0;
+    }
+    #uno_box .arrow{
+        position: absolute;
+        top: 40%;
+        z-index: 1;
+        scale: .6;
+    }
+    h1{
+        font-family: 'Fraunces', serif;
+        text-align: left;
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        font-size: 2em ;
+        letter-spacing: .2em;
+    }
+    #blanquillo{
+        display: flex;
+        width: 50%;
+        position: absolute;
+        left: 50%;
+    }
+    #trans{
+        position: relative;
+        flex-direction: column;
+        width: 50%;
+    }
+    #transform{
+        font-size: 1.5rem;
+        text-align: left;
+        padding: 100px 160px 10px 60px;
+        
+    }
+    #transform_p{
+        padding: 10px 60px 20px 60px;
+        font-size: .6rem;
+        text-align: left;
+        line-height: 2;
+    }
+    #transform_link{
+        display: flex;
+        justify-content: left;
+        padding: 10px 100px 100px 60px;
+        text-decoration: none;
+        font-family: 'Fraunces', serif;
+        color:rgb(0, 0, 0);
+        font-size: .7rem;
+    }
+    #copa{
+        content:url(./images/desktop/image-stand-out.jpg);
+        width: 50%;
+        position: absolute;
+        right: 50%;
+    }
+    #audien{
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+        position: absolute;
+        left: 50%;
+        padding-top: 80px;
+        
+    }
+    #audience{
+        padding: 30px 50px 20px 60px ;
+        font-size: 1.5rem;
+        text-align: left;
+        
+    }
+    #audience_p{
+        padding: 10px 50px 20px 60px;
+        font-size: .6rem;
+        text-align: left;
+        line-height: 1.5;
+    }
+    #audience_link{
+        display: flex;
+        justify-content: left;
+        padding: 20px 100px 20px 60px;
+        text-decoration: none;
+        font-family: 'Fraunces', serif;
+        color:rgb(0, 0, 0);
+        font-size: .7rem;
     
+    }
+    #cherry{
+        position: relative;
+        width: 50%;
+        justify-content: center;
+    
+    }
+    #cerezas{
+        display: flex;
+        width: 100%;
+        position: absolute;
+        top: 380px;
+        content:url(./images/desktop/image-graphic-design.jpg);
+        
+    }
+    #graphic_design{
+        position: absolute;
+        top: 790px;
+        left: 90px;
+        color: hsl(167, 40%, 24%);
+        font-size:14pt;
+        text-align: center;
+        margin: auto;
+        
+    }
+    #p_gd{
+        position: absolute;
+        width: 60%;
+        transform: translate(5%, -250%);
+        color: hsl(167, 40%, 24%);
+        top: 780px;
+        font-size: 8pt;
+        left: 70px;
+    
+    }
+    #tangerine{
+        position: relative;
+        width: 50%;
+        right: 50%;
+        margin: auto;
+    }
+    #mandarina{
+        position: absolute;
+        width: 100%;
+        top: 380px;
+        right: -150%;
+        content:url(./images/desktop/image-photography.jpg);
+    }
+    #photography{
+        position: absolute;
+        top: 780px;
+        left:790px;
+        font-size:14pt;
+        text-align: center;
+        margin: auto;
+    }
+    #p_photography{
+        position: absolute;
+        width: 50%;
+        top: 780px;
+        font-size: 8pt;
+        left: 770px;
+    
+    }
+    #testimonials{
+        font-size: 1rem;
+        color:hsl(210, 4%, 67%);
+        position: absolute;
+        top: 1750px;
+        left: 35%;    
+        letter-spacing: .2rem;
+        padding: 0;
+    }
+    #clientes{
+        position: absolute;
+        top: 1850px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        list-style: none;
+    }
+    #img_x4{
+        position: absolute;
+        top: 2200px;
+        display: grid ;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        flex-direction: row;
+        object-fit: cover;
+    }
+    .img_c1{
+        content:url(./images/desktop/image-gallery-milkbottles.jpg); 
+           
+    }
+    .img_c2{
+        content:url(./images/desktop/image-gallery-orange.jpg); 
+    }
+    .img_c3{
+        content:url(./images/desktop/image-gallery-cone.jpg);
+    }
+    .img_c4{
+        content:url(./images/desktop/image-gallery-sugarcubes.jpg);
+    }
+    #footer{
+        position: absolute;
+        top: 2480px;
+        width: 100%;
+    }
+    #img_logo_foot img{
+        scale: .4;
+        margin-bottom: -10px;
+        
+    }
+    #menu_foot{
+        padding-top: 0
+        
+    }
+    #social{
+        
+        width: 20%;
+        align-content: center;
+        justify-content: space-around;
+        gap: 10px;
+        margin: auto;
+        padding-bottom: 80px;
+    }
+
 }
