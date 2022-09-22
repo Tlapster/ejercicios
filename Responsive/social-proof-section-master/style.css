@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --VeryDarkMagenta: hsl(300, 43%, 22%);
+    --SoftPink: hsl(333, 80%, 67%);
+    --DarkGrayishMagenta: hsl(303, 10%, 53%);
+    --LightGrayishMagenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+
+    --font-size: 15px;
+    ---Spartan: 'League Spartan', 'sans-serif';    
+}
+.container{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-family: var(---Spartan);
+    background-image:url(./images/bg-pattern-top-mobile.svg);
+    background-repeat: no-repeat;
+    margin: auto;
+}
+h1{
+    text-align: center;
+    color: var(--VeryDarkMagenta);
+    width: 80%;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    
+}
+.subtitulo{
+    text-align: center;
+    color: var(--DarkGrayishMagenta);
+    font-size: 1.1rem;
+    padding-bottom: 20px;
+    width: 95%;
+    line-height: 1.5rem;
+}
+.gridRate{
+    display: grid;
+    grid-template-rows: auto;
+    width: 100%;
+    gap: 10px;
+    padding-bottom: 50px;
+}
+.rate{
+    background-color: var(--LightGrayishMagenta);
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.stars{
+    display: flex;
+    align-self: center;
+    gap: 10px;
+    padding: 5px 0;
+    
+    
+}
+.pRate{
+    font-weight: 700;
+    color: var(--VeryDarkMagenta);
+    font-size: .9em;
+    padding: 5px 0;
+}
+.mainCards{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.card{
+    background-color: var(--VeryDarkMagenta);
+    color: var(--White);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em;
+}
+.heros{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: repeat(2, min-content);
+    grid-template-areas: 
+    "a b"
+    "a c";
+    align-items: center;
+    height: fit-content;
+}
+.card_img{
+    border-radius: 50%;
+    width: 70%;
+    grid-area: a; 
+    justify-self: center;  
+}
+.nombre{
+    grid-area: b;
+    margin: 0;
+    padding-left: 1em;
+}
+.buyer{
+    color: var(--SoftPink);
+    font-weight: 100;
+    grid-area: c;
+    padding-left: 1em;
+}
+.card>p{
+    line-height: 1.5em;
+    font-weight: 400;
+    width: 90%;
+    padding-top: 20px;
+}
+.card:last-child{
+    margin-bottom: 80px;
+}

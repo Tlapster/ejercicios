@@ -6,6 +6,7 @@
 body{
     height: fit-content;
     margin: auto;
+    
 }
 #navmenu{
    display: flex;
