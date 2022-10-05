@@ -24,6 +24,9 @@ Comparte un screenshot de tu programa funcionando por discord, no compartas tu c
 
 */
 
+let respuesta = prompt("Se sumarán los 2 array usando la funcion Concatenar, Está de acuerdo?");
+const resultado = document.getElementById("resultado");
+
 const a1 = ["Pedro", "Marcos", "Maria", "Ignacio"]
 console.log(a1);
 
@@ -32,4 +35,8 @@ console.log(a2)
 
 const suma1_2 = a1.concat(a2);
 
-console.log(suma1_2);
+if(respuesta.toLowerCase()==="si"){
+    resultado.innerHTML = (suma1_2);
+}   else{
+    resultado.innerHTML= "<strong>ok pero no te molestes :(</strong>";
+}

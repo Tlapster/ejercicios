@@ -1,8 +1,8 @@
-let respuesta = promt("Cual es el nombre de Superman?");
+let respuesta = prompt("Cual es el nombre de Superman?");
 const resultado = document.getElementById("resultado");
 
-if(respuesta.tolowercase()==="clark kent"){
-    resultado.textContent = "correcta!";
+if(respuesta.toLowerCase()==="clark kent"){
+    resultado.innerHTML = "correcta!";
 }   else{
-    
+    resultado.innerHTML= "<strong>Incorrecta! :(</strong>";
 }

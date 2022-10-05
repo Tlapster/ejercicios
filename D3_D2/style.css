@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+#lista{
+    border-radius: .5rem;
+    background-color: rgb(120, 184, 248);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 60%;
+    height: 60vh;
+    margin: auto;
+    padding: 1rem;
+
+}
+h1{
+    padding-top: 1rem;
+    color: rgb(245, 245, 245);
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+#tasksContainer{
+    border: solid .2rem white;
+    height: fit-content;
+    border-radius: .5rem;
+    background-color: #fff;
+}
