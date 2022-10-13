@@ -6,40 +6,55 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Tip calculator app</title>
 </head>
 <body>
+  <main>
+    <form name="tipCalc">
+      <fieldset name="billing">
+        <label for="bill">
+          Bill
+          <input type="number" id="bill" name="bill" placeholder="Total de la cuenta">
+        </label>
+      </fieldset>
+      <br>
 
-  Bill
+      <fieldset>
+        <legend>Select Tip %</legend><br>
+          <label for="tip1"><input type="radio" name="tip" id="tip1" value="0.05">5%</label><br>
+          <label for="tip2"><input type="radio" name="tip" id="tip2" value="0.1">10%</label><br>
+          <label for="tip3"><input type="radio" name="tip" id="tip3" value="0.15">15%</label><br>
+          <label for="tip4"><input type="radio" name="tip" id="tip4" value="0.25">25%</label><br>
+          <label for="tip5"><input type="radio" name="tip" id="tip5" value="0.50">50%</label><br>
+          <label><input type="radio" name="tip" value="5 %">Custom</label><br>
+      </fieldset> 
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+      <fieldset>
+        <label id="personas">Número de personas</label>
+        <input id="personas" type="number" name="personas" placeholder="Personas">
+      </fieldset>
 
-  Number of People
+    </form>
+    <div id="result">
+      <div id="result-amount">
+        <div class="result-amount__title">
+          <p>Tip Amount</p>
+          <small>/ person</small>
+        </div>
+        <div class="result-amount__cantidad" id="result-amount__cantidad"></div>
+      </div>
 
-  Tip Amount
-  / person
+      <div id="result-total">
+        <div class="result-total_tittle">
+          <p>Total</p>
+          <small>/ person</small>
+        </div>
+        <div class="result-total__cantidad" id="result-total__cantidad"></div>
+      </div>
 
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <button id="reset">RESET</button>
+    </div>
+  </main>
   <script src="./Js/main.js"></script>
 </body>
 </html>
