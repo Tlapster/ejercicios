@@ -19,7 +19,7 @@ const PUNTOS = [
   ["JX", 8],
   ["QZ", 10]
 ]
-const puntos_user = document.getElementById("puntos_user");
+const btn_palabra = document.getElementById("btn_palabra");
 const palabra = document.getElementById("palabra");
 
 function sumarPuntos(palabra) {
@@ -36,13 +36,14 @@ function sumarPuntos(palabra) {
     puntos += punto[0] == undefined ? 0 : punto[0][1];
   })
   
-  alert(`El total de Puntos por tu palabra es: ${puntos}`);
+ 
+  //alert(`El total de Puntos por tu palabra es: ${puntos}`);
 
   return puntos;//cantidad de puntos;
   
-}
-puntos_user.addEventListener("click",() => sumarPuntos(PUNTOS))
-
+};
+btn_palabra.addEventListener("click",() => sumarPuntos(palabra))
+console.log(sumarPuntos.value);
 
 
 
