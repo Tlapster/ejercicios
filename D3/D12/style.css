@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+#logo{
+    width: 25%;
+}
+#container{
+    display: flex;
+    
+}
+
+.nombrepoke::first-letter{
+    text-transform: uppercase;
+}
+.lista{
+    width: 25%;
+}
+#list{
+    padding: 0 1rem;
+    overflow-y: auto;
+    max-height: 100vh;
+}
+#pokemon{
+    width: 70%;
+    background-color: grey;
+    color: white;
+}
+.list__item{
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    padding: .5rem 0;
+}
+#imgFrente{
+    
+}
